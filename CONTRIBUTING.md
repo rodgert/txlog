@@ -22,12 +22,12 @@ txlog is MIT licensed. See `LICENSE`.
 
 **Why MIT rather than BSL-1.0?**
 
-[edn-cpp](https://github.com/cljseq/edn-cpp) chose BSL-1.0 — a natural fit
+[edn-cpp](https://github.com/nous/edn-cpp) chose BSL-1.0 — a natural fit
 for a standalone C++ library targeting a C++-ecosystem audience. txlog is
 different: it is a multi-language monorepo whose Python and Clojure peers
 live in ecosystems where MIT is the expected default. More importantly, the
 C++ peer will be linked into the CLAP audio container alongside the Ableton
-Link library (GPL) and the cljseq sidecar (LGPL, or GPL when Link-dependent).
+Link library (GPL) and the nous sidecar (LGPL, or GPL when Link-dependent).
 Both MIT and BSL-1.0 are GPL-compatible — MIT code can be freely incorporated
 into a GPL binary — but MIT is shorter, simpler, and more universally
 understood. When in doubt, reach for the simpler licence.
