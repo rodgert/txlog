@@ -1,7 +1,7 @@
 (defsystem "txlog"
   :description "txlog — Common Lisp library and daemon for the txlog session log format"
   :version "0.1.0"
-  :author "cljseq contributors"
+  :author "nomos-studio contributors"
   :license "BSL-1.0"
   :depends-on ("cl-sqlite"
                "bordeaux-threads"

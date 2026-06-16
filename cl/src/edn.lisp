@@ -6,7 +6,7 @@
 ;;
 ;; EDN keywords are represented as a struct with a string name (without the
 ;; leading colon). The CL keyword symbol approach (:|txlog/user|) is rejected
-;; because dotted namespace names like :org.cljseq/loop don't map cleanly to
+;; because dotted namespace names like :org.nous/loop don't map cleanly to
 ;; CL package-qualified symbols.
 ;;
 ;; Serialised form in SQLite: ":txlog/user"  (with colon)

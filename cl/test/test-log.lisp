@@ -213,9 +213,9 @@
         (is (= 5.0d0  (getf (second timeline) :beat)))))))
 
 (test crystallize-excludes-schema-paths
-  "crystallize excludes :cljseq/schema paths by default."
+  "crystallize excludes :txlog/schema paths by default."
   (with-log (log ":memory:")
-    (emit log (make-entry :path (list (kw "cljseq/schema") (kw "a/x"))
+    (emit log (make-entry :path (list (kw "txlog/schema") (kw "a/x"))
                           :after "\"v\"" :beat 1.0d0))
     (emit log (make-entry :path (make-path "a/x") :after "\"v\"" :beat 1.0d0))
     (let ((result (crystallize log 0.0d0 10.0d0)))

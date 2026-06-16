@@ -220,7 +220,7 @@
 (defun crystallize (log beat-from beat-to &key source (include-schema nil))
   "Per-path timeline for a beat window. Beats normalised to BEAT-FROM = 0.
    Only entries with a non-nil after value are included.
-   :INCLUDE-SCHEMA nil (default) excludes paths starting with :cljseq/schema."
+   :INCLUDE-SCHEMA nil (default) excludes paths starting with :txlog/schema."
   (let ((entries (range log beat-from beat-to :source source))
         (result  (make-hash-table :test 'equal)))
     (dolist (e entries)
@@ -237,10 +237,10 @@
     result))
 
 (defun edn-schema-path-p (path)
-  "True if PATH starts with the :cljseq/schema keyword."
+  "True if PATH starts with the :txlog/schema keyword."
   (and (consp path)
        (txlog.edn:edn-keyword-p (first path))
-       (string= (txlog.edn:edn-keyword-name (first path)) "cljseq/schema")))
+       (string= (txlog.edn:edn-keyword-name (first path)) "txlog/schema")))
 
 ;; ---------------------------------------------------------------------------
 ;; Merge + diff
