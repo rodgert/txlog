@@ -1,0 +1,33 @@
+version = 1
+SPDX-PackageName = "txlog"
+SPDX-PackageSupplier = "rodgert@twrodgers.com"
+SPDX-PackageDownloadLocation = "https://github.com/nomos-studio/txlog"
+
+# C++ library — SPDX-License-Identifier already inline (MIT)
+[[annotations]]
+path = "cpp/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 nomos-studio contributors"
+SPDX-License-Identifier = "MIT"
+
+# Clojure client — SPDX-License-Identifier already inline (MIT)
+[[annotations]]
+path = "clj/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 nomos-studio contributors"
+SPDX-License-Identifier = "MIT"
+
+# Common Lisp client — SPDX-License-Identifier already inline (MIT)
+[[annotations]]
+path = "cl/**"
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 nomos-studio contributors"
+SPDX-License-Identifier = "MIT"
+
+# Root: scripts, config, docs — MIT (consistent with all sub-components)
+[[annotations]]
+path = ["scripts/**", ".gitignore", ".clang-format", ".github/**",
+        "CONTRIBUTING.md", "LICENSE"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2025-2026 nomos-studio contributors"
+SPDX-License-Identifier = "MIT"
