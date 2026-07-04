@@ -46,6 +46,14 @@ All source files carry an SPDX identifier on the first line:
 # SPDX-License-Identifier: MIT
 ```
 
+Compliance is checked with [REUSE](https://reuse.software/) (`pip install reuse`):
+
+```sh
+reuse lint
+```
+
+This must exit 0 before a release tag. CI runs it automatically.
+
 ---
 
 ## Git hooks
